@@ -61,6 +61,7 @@ Follow these steps to setup and run this code pattern using `Auto AI`.
 1. [Analyze results](#8-analyze-results)
 1. [Deploy to Cloud](#9-deploy-to-cloud)
 1. [Model testing](#10-model-testing)
+1. [Integrate SCI with Cloud Pak for Data](#11-integrate-sci-with-cloud-pak-for-data)
 
 
 ## 1. Create an account with IBM Cloud Pak for Data
@@ -80,7 +81,7 @@ Define the project by giving a Name and hit 'Create'.
 ## 3. Add Data
 
 [Clone this repo](https://github.com/IBM/supply-chain-optimization-using-ibm)
-Navigate to [Data](https://github.com/IBM/supply-chain-optimization-using-ibm/tree/master/Data) and save the file on the disk. 
+Navigate to [Data](https://github.com/IBM/supply-chain-optimization-using-ibm/tree/master/Data) and save the file on the disk. The data is comming from Supply Chain Insights which is referrenced in Step 11.
 
 Click on Assets and select Browse and add the csv file from your file system.
 
@@ -183,6 +184,10 @@ Now that we have created and deployed the model as a web service, how do we test
 For predicting multiple records, we have to update the values in the json file and use the option to input json data & then hit `Predict` to generate real time predictions.
 
 ![](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/images/json.png))
+
+## 11. Integrate SCI with Cloud Pak for Data
+
+Please review the steps detailed at [SCI & CP4D Integration](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/SCIwithCPforData-README.md)
 
 With this, we have come to the end of this code pattern. We have learnt how to use Cloud Pak for Data with SCI to churn out optimized solution for supply chain network. Feel free to fork this repo for customizing this solution to suit your requirements. Thanks for showing interest in this code pattern.
 
