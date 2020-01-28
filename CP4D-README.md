@@ -18,10 +18,11 @@ When the reader has completed this code pattern, they will understand how to :
 ![](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/images/architecture.png)
 
 1. User logs into Watson Studio, creates a project and initiates an instance of Auto AI & Object Storage.
-2. User uploads the data file in the CSV format to the object storage.
+2. User uploads the data file in the CSV format to the object storage. The data file is exported from Supply Chain Insights.
 3. User initiates the model building process using Auto AI and create pipelines.
 4. User evaluates different pipelines from Auto AI and selects the best model for deployment.
 5. User generates accurate predictions by making ReST call to the deployed model.
+6. User ingests the data from Supply Chain Insights into CP4D and returns the predicted recommendation from the model back to Supply Chain Insights for further processing.
 
 ## Prerequisites
 
