@@ -62,7 +62,7 @@ Follow these steps to setup and run this code pattern using `Auto AI`.
 1. [Analyze results](#8-analyze-results)
 1. [Deploy to Cloud](#9-deploy-to-cloud)
 1. [Model testing](#10-model-testing)
-1. [Integrate SCI with Cloud Pak for Data](#11-integrate-sci-with-cloud-pak-for-data)
+1. [Integrate Supply Chain Insights with Cloud Pak for Data](#11-integrate-supply-chain-insights-with-cloud-pak-for-data)
 
 
 ## 1. Create an account with IBM Cloud Pak for Data
