@@ -21,12 +21,13 @@ SCBA connects to ML model and gets the prediction as a response; Once response r
 SCBA connects SCI & updates newly predicted value as a Safety Stock level for given item and respond with status of this command. Now KPI gets recalculated with new Safety Stock predicted and gives much relevant and less number of Alerts, in turn fewer item replenishments
 
 ## Included components
-### IBM Products -
-* IBM Supply Chain Insights
-* IBM Supply Chain Business Assitant
-* IBM Cloud Pak for Data
 
-### Featured Technologies - 
+* [IBM Supply Chain Insights](https://www.ibm.com/in-en/products/supply-chain-insights): IBM® Sterling Supply Chain Insights is an AI-enabled solution that delivers real-time intelligence to optimize supply chain performance by quickly correlating data from siloed systems, capturing organizational knowledge and creating digital playbooks.
+* [IBM Supply Chain Business Assitant](https://www.ibm.com/support/knowledgecenter/SS7J6M/kc_welcome.html): IBM Sterling Supply Chain Business Assistant is a conversational AI system designed to help you in your every day tasks and decision making.
+* [IBM Cloud Pak For Data](https://developer.ibm.com/articles/intro-to-cloud-pak-for-data/): IBM Cloud Pak™ for Data is a fully-integrated data and AI platform that modernizes how businesses collect, organize and analyze data and infuse AI throughout their organizations.
+
+### Featured Technologies
+
 * NodeJS
 * REST APIs
 * Machine Learning
@@ -37,7 +38,7 @@ SCBA connects SCI & updates newly predicted value as a Safety Stock level for gi
 * Operation Center dashboard has been setup with all required KPIs and alert thresholds
 * As described above in As-Is scenario, "Below Safety Stock (Item)" KPI is active and red alert is visible; While drill-down to KPI, all impacted items with location details are shown
 
-## Steps to achieve To-Be scenario - 
+## Steps to achieve To-Be scenario
 
 1) Upload required data set from different Supply chain sources to Cloud-Pak-for-Data as shown in diagram below using REST APIs 
 2) Build machine learning model to predict supply lead time for given item using historical purchase order data as well as weather data (Refer ML Model building section)
@@ -61,7 +62,7 @@ In actual supply chain eco-system, purchase order and shipment data would be spr
 
 ### Step 2 - Build, Test and Deploy ML model in Cloud-Pak-for-Data
 
-   [Building ML model to predict supply lead time](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/CP4D-README.md)
+`Please refer to the step by step instructions at` [Building ML model to predict supply lead time using Cloud Pak for Data](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/CP4D-README.md)
 
 `Note: In this code pattern, ML model is built only to predict new supply lead time for given item at given period. Similar model can be built to predict new consumption`
 
