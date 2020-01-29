@@ -125,3 +125,9 @@ In actual supply chain eco-system, purchase order and shipment data would be spr
 #### 5c. Write new back-end Asset in NodeJS to make a REST API call to SCI to update new safety stock value
 
 [Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/sci.js)
+
+# License
+
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the Developer [Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+
+Check the [ASL FAQ link](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN) for more details
