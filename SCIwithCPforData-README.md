@@ -1,5 +1,5 @@
 # Developing a custom Supply Chain Business Assistant with skills to predict and take actions 
-### Using IBM Sterling and IBM CloudPak-for-Data
+### Using IBM Sterling and IBM Cloud Pak for Data
 
 ## Objective 
 To enable Supply Chain Analyst with actionable insights while "Below Safety Stock" KPI gives alert in Supply Chain Insights (SCI) - Operation Center dashboard.
