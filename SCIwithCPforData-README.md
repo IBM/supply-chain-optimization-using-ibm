@@ -65,7 +65,7 @@ In actual supply chain eco-system, purchase order and shipment data would be spr
 
 `Please refer to the step by step instructions at` [Building AI model to predict supply lead time using Cloud Pak for Data](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/CP4D-README.md)
 
-`Note: In this code pattern, ML model is built only to predict new supply lead time for given item at given period. Similar model can be built to predict new consumption`
+`Note: In this code pattern, AI model is built only to predict new supply lead time for given item at given period. Similar model can be built to predict new consumption`
 
 
 
