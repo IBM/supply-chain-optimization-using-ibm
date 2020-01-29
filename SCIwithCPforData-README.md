@@ -1,5 +1,5 @@
 # Developing a custom Supply Chain Business Assistant with skills to predict and take actions 
-## using IBM Sterling and IBM CloudPak-for-Data
+### Using IBM Sterling and IBM CloudPak-for-Data
 
 ## Objective 
 To enable Supply Chain Analyst with actionable insights while "Below Safety Stock" KPI gives alert in Supply Chain Insights (SCI) - Operation Center dashboard.
@@ -38,6 +38,10 @@ SCBA connects SCI & updates newly predicted value as a Safety Stock level for gi
 * IBM Sterling Supply Chain Insights tenant has been setup and integrated with required data sources
 * Operation Center dashboard has been setup with all required KPIs and alert thresholds
 * As described above in As-Is scenario, "Below Safety Stock (Item)" KPI is active and red alert is visible; While drill-down to KPI, all impacted items with location details are shown
+
+  #### `Note:`
+  - To launch SCI Operations Center and EBA Dev Lab using IBMId, use this [link](https://supplychaininsights.ibm.com)
+  - To create IBMId for first time users, registeration needs to be completed using the [link](https://myibm.ibm.com) and subscribe to SCI SaaS trial tenant through IBM Partnerworld or Sales channels
 
 ## Steps to achieve To-Be scenario
 
@@ -127,6 +131,10 @@ In actual supply chain eco-system, purchase order and shipment data would be spr
 #### 5c. Write new back-end Asset in NodeJS to make a REST API call to SCI to update new safety stock value
 
 [Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/sci.js)
+
+### To-Be Usecase End-Results Screenshot
+
+![](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/images/SCI-SCBA_Usecase_EndResult-Screenshot.jpg)
 
 # License
 
