@@ -188,9 +188,7 @@ For predicting multiple records, we have to update the values in the json file a
 
 ## 11. Integrate SCI with Cloud Pak for Data
 
-Please review the steps detailed at [SCI & CP4D Integration](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/SCIwithCPforData-README.md)
-
-With this, we have learnt how to use Cloud Pak for Data with SCI to churn out optimized solution for supply chain network.  
+Please review the steps detailed at [SCI & CP4D Integration](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/SCIwithCPforData-README.md) 
 
 # License
 
