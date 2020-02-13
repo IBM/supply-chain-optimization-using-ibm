@@ -34,14 +34,21 @@ SCBA connects SCI & updates newly predicted value as a Safety Stock level for gi
 * Machine Learning
 * Nature Language Processing
 
-### Pre-requisites - 
-* IBM Sterling Supply Chain Insights tenant has been setup and integrated with required data sources
-* Operation Center dashboard has been setup with all required KPIs and alert thresholds
-* As described above in As-Is scenario, "Below Safety Stock (Item)" KPI is active and red alert is visible; While drill-down to KPI, all impacted items with location details are shown
+### Pre-requisites
 
+* It is recommended to complete below learning courses in IBM Digital Learning portal before proceeding with this code pattern
+  - [IBM Supply Chain Insights - Deployment and Data Configuration course](https://learn.ibm.com/enrol/index.php?id=5000)
+  - [IBM Supply Chain Business Assistant - Developing an Embedded Business Agent course](https://learn.ibm.com/course/view.php?id=5150) 
+
+* IBM Sterling Supply Chain Insights SaaS tenant has been setup and loaded with required data set
   #### `Note:`
-  - To launch SCI Operations Center and EBA Dev Lab using IBMId, use this [link](https://supplychaininsights.ibm.com)
-  - To create IBMId for first time users, registeration needs to be completed using the [link](https://myibm.ibm.com) and subscribe to SCI SaaS trial tenant through IBM Partnerworld or Sales channels
+  - To subscribe to SCI SaaS trial tenant, sign-in to [IBM Digital Learning Portal](https://learn.ibm.com/course/view.php?id=5073)
+  - To launch SCI Operations Center and SCBA Dev Lab, sign-in to [IBM Supply Chain Insights SaaS](https://supplychaininsights.ibm.com)
+  - Once learning environment is provisioned, it has required sample data set loaded with it
+  
+* Operation Center dashboard has been setup with all required KPIs and alert thresholds
+
+* As described above in As-Is scenario, "Below Safety Stock (Item)" KPI is active and red alert is visible; While drill-down to KPI, all impacted items with location details are shown
 
 ## Steps to achieve To-Be scenario
 
@@ -57,12 +64,15 @@ SCBA connects SCI & updates newly predicted value as a Safety Stock level for gi
 5) Integrate SCBA with SCI by calling 'Update Item REST API' using NodeJS to save newly predicted safety stock value for that item in SCI
 
 ### Step 1 - Uploading Dataset
-In actual supply chain eco-system, purchase order and shipment data would be spread across different IT systems like SAP, Oracle, JDA etc. Using IBM CloudPak-for-Data, different data sources can be virtualized without moving data from its at-rest place. 
+
+Below architecture diagram depicts actual supply chain eco-system where-in purchase order and shipment data would be spread across different IT systems like SAP, Oracle, JDA etc. Using IBM CloudPak-for-Data, different data sources can be virtualized without moving data from its at-rest place. 
 
 ![](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/images/SCI-SCBA_with_CPforData_ArchDiagram.png)
 
-`Note: In this code pattern, required data set is uploaded as a CSV file to simplify the steps since focus is on integration of SCI/SCBA with CloudPak-for-Data`
-
+ #### `Note:`
+  - In this code pattern, focus is on integration of SCI/SCBA with CloudPak-for-Data; Required sample data is loaded by default in provisioned learning SCI SaaS tenant; 
+  - If developer wants to upload new data set, then [SCI REST APIs](https://developer.ibm.com/api/view/scinsights-prod:supply-chain-insights:title-Supply_Chain_Insights#Overview) can be used to upload it
+  - If developer is new to SCI platform, it is advised to complete [SCI Deployment and Data Configuration course](https://learn.ibm.com/enrol/index.php?id=5000) before uploading new data set
 
 
 ### Step 2 - Build, Test and Deploy AI model in Cloud-Pak-for-Data
@@ -74,6 +84,9 @@ In actual supply chain eco-system, purchase order and shipment data would be spr
 
 
 ### Step 3 - Integrating SCBA with CloudPak-for-Data to predict new safety stock
+
+ #### `Note:`
+  - If developer is new to SCBA Dev lab, it is advised to complete [Developing an Embedded Business Agent course](https://learn.ibm.com/course/view.php?id=5150) in IBM Digital Learning Portal before proceeding further steps
 
 #### 3a. Define new Concepts, Patterns in EBA Dev Lab to extend SCBA to learn ontology of "new safety stock" and understand
 
