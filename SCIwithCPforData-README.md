@@ -98,11 +98,11 @@ Below architecture diagram depicts actual supply chain eco-system where-in purch
 
 ![](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/images/actions.png)
 
-[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/predictsafetystock.js)
+[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/predictsafetystock.js) which makes a call to a corresponding method in back-end asset 'wml.js' to predict from this action.
 
 #### 3c. Write new back-end Asset in NodeJS to make a REST API call to CloudPak-for-Data to predict
 
-[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/wml.js)
+[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/wml.js) which makes a predict API call to CP4D or Watson Studio to get predicted lead time.
 
 
 
@@ -110,19 +110,19 @@ Below architecture diagram depicts actual supply chain eco-system where-in purch
 
 #### 4a. Code to get average Lead Time
 
-[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/util.js)
+[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/util.js) which gets average lead time of supply orders delivered; Either it can connect to external system to get this value or it can be calculated by calling corresponding SCI API if it is present as part of data upload.
 
 #### 4b. Code to get average consumption
 
-[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/util.js)
+[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/util.js) which gets average consumption of inventories; Either it can connect to external system to get this value or it can be calculated by calling corresponding SCI API if it is present as part of data upload.
 
 #### 4c. Code to get predicted consumption (~Note: ML model has to be built for this otherwise it can return max consumption)
 
-[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/util.js)
+[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/util.js) which gets predicted consumption of inventories; Either it can be predicted using ML model deployed in CP4D or Watson Studio or it can connect to external system to get maximum consumption happened during similar period in last year.
 
 #### 4d. Code to calculate new Safety Stock using predicted lead time and using above calcuated average values
 
-[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/util.js)
+[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/util.js) which gets predicted new Safety Stock using formula explained above by calling relevant util methods as well as predict method of back-end asset 'wml.js'.
 
 
 
@@ -134,16 +134,18 @@ Below architecture diagram depicts actual supply chain eco-system where-in purch
 
 ![](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/images/patterns.png)
 
-#### 5b. Define Actions in EBA Dev Lab to call back-end assets to predict and to form response in natural languaage
+#### 5b. Define Actions in EBA Dev Lab to call back-end assets to predict and to form response in natural language
 
 ![](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/images/actions.png)
 
-[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/updatesafetystock.js)
+[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/updatesafetystock.js) which calls a corresponding method in back-end asset 'sci.js' from this action.
 
 
 #### 5c. Write new back-end Asset in NodeJS to make a REST API call to SCI to update new safety stock value
 
-[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/sci.js)
+![](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/images/asset_scijs.png)
+
+[Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/sci.js) which makes [corresponding SCI REST API](https://developer.ibm.com/api/view/scinsights-prod:supply-chain-insights:title-Supply_Chain_Insights#107460) to update new Safety stock value.
 
 ### To-Be Usecase End-Results Screenshot
 
