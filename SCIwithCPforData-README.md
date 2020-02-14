@@ -1,5 +1,5 @@
 # Developing a custom Supply Chain Business Assistant with skills to predict and take actions 
-### Using IBM Sterling and IBM Cloud Pak for Data
+### Using IBM Sterling and IBM CloudPak-for-Data/Watson-Studio
 
 ## Objective 
 To enable Supply Chain Analyst with actionable insights while "Below Safety Stock" KPI gives alert in Supply Chain Insights (SCI) - Operation Center dashboard.
@@ -102,11 +102,17 @@ Below architecture diagram depicts actual supply chain eco-system where-in purch
 
 #### 3c. Write new back-end Asset in NodeJS to make a REST API call to CloudPak-for-Data to predict
 
+![](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/images/asset_wmljs.png)
+
 [Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/wml.js) which makes a predict API call to CP4D or Watson Studio to get predicted lead time.
 
 
-
 ### Step 4 - Recalculating new safety stock using new back-end Asset in NodeJS
+
+ #### `Note:`
+  - If developer is new to SCBA Dev lab, it is advised to complete [Developing an Embedded Business Agent course](https://learn.ibm.com/course/view.php?id=5150) in IBM Digital Learning Portal before proceeding further steps
+
+![](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/images/asset_utiljs.png)
 
 #### 4a. Code to get average Lead Time
 
@@ -123,7 +129,6 @@ Below architecture diagram depicts actual supply chain eco-system where-in purch
 #### 4d. Code to calculate new Safety Stock using predicted lead time and using above calcuated average values
 
 [Click here to get source code](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/src/util.js) which gets predicted new Safety Stock using formula explained above by calling relevant util methods as well as predict method of back-end asset 'wml.js'.
-
 
 
 ### Step 5 - Integrating SCBA with SCI to update item
