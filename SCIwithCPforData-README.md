@@ -133,6 +133,9 @@ Below architecture diagram depicts actual supply chain eco-system where-in purch
 
 ### Step 5 - Integrating SCBA with SCI to update item
 
+ #### `Note:`
+  - If developer is new to SCBA Dev lab, it is advised to complete [Developing an Embedded Business Agent course](https://learn.ibm.com/course/view.php?id=5150) in IBM Digital Learning Portal before proceeding further steps
+
 #### 5a. Define new Concepts, Patterns in EBA Dev Lab to extend SCBA to learn to update "new safety stock" into SCI
 
 ![](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/images/concepts.png)
