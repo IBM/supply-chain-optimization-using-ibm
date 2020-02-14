@@ -34,7 +34,7 @@ SCBA connects SCI & updates newly predicted value as a Safety Stock level for gi
 * Machine Learning
 * Nature Language Processing
 
-### Pre-requisites
+### Mandatory Pre-requisites
 
 * It is recommended to complete below learning courses in IBM Digital Learning portal before proceeding with this code pattern
   - [IBM Supply Chain Insights - Deployment and Data Configuration course](https://learn.ibm.com/enrol/index.php?id=5000)
