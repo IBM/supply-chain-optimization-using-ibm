@@ -1,6 +1,6 @@
 # Supply Chain Optimization using IBM
 
-## Please refer to [this link](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/SCIwithCPforData-README.md) for getting started.
+### Please refer to [this link](https://github.com/IBM/supply-chain-optimization-using-ibm/blob/master/SCIwithCPforData-README.md) for getting started.
 
 In this Code Pattern, we use IBM Cloud Pak for Data to go through the whole data science pipeline to solve a business problem and predict the lead time for different raw materials. Cloud Pak for Data is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data as well as build and deploy machine learning and deep learning models.
 
